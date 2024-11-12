@@ -21,6 +21,6 @@ void ShrubberyCreationForm::execute(Bureaucrat const &executor) const
 		throw AForm::GradeTooLowException();
 	}
 	std::ofstream file((target + "_shrubbery").c_str());
-	file << "ASCII trees" << std::endl; // 例: ASCIIアート
+	file << "       _-_\n    /~~   ~~\\\n /~~         ~~\\\n{               }\n \\  _-     -_  /\n   ~  \\\\ //  ~\n_- -   | | _- _\n  _ -  | |   -_\n      // \\" << std::endl;
 	file.close();
 }
